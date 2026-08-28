@@ -16,12 +16,16 @@ programa {
       leia(c)
     }
     
-        delta = (b *b ) - (4 * a * c )
-        escreva("O valor de delta é: ", delta)
-        se (delta<0){
-          escreva("O delta é negativo então não possui raiz reais\n")
-        }
-
+     delta = (b *b ) - (4 * a * c )
+     escreva("O valor de delta é: ", delta)
+    se (delta<0){
+       escreva("O delta é negativo então não possui raiz reais\n")
+    }
+    se(delta == 0){
+      x1 = -b / (2 * a)
+      escreva("A equação possui apenas uma raiz dupla\n")
+      escreva("x = ", x1, "\n")
+    }
 
 
 
